@@ -1,0 +1,181 @@
+<!doctype html><html lang=es class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=description content="Apuntes de fácil acceso para distintas tecnologías."><link href=https://crisconru.github.io/code/ides/vscode/vscode/ rel=canonical><meta name=author content="Cristóbal Contreras Rubio"><meta name=lang:clipboard.copy content="Copiar al portapapeles"><meta name=lang:clipboard.copied content="Copiado al portapapeles"><meta name=lang:search.language content=es><meta name=lang:search.pipeline.stopwords content=True><meta name=lang:search.pipeline.trimmer content=True><meta name=lang:search.result.none content="No se encontraron documentos"><meta name=lang:search.result.one content="1 documento encontrado"><meta name=lang:search.result.other content="# documentos encontrados"><meta name=lang:search.tokenizer content=[\s\-]+><link rel="shortcut icon" href=../../../../assets/images/favicon.png><meta name=generator content="mkdocs-1.0.4, mkdocs-material-4.4.0"><title>Visual Studio code - Tips de Cristo</title><link rel=stylesheet href=../../../../assets/stylesheets/application.0284f74d.css><link rel=stylesheet href=../../../../assets/stylesheets/application-palette.01803549.css><meta name=theme-color content=#4caf50><script src=../../../../assets/javascripts/modernizr.74668098.js></script><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel=stylesheet href=../../../../assets/fonts/material-icons.css></head> <body dir=ltr data-md-color-primary=green data-md-color-accent=pink> <svg class=md-svg> <defs> <svg xmlns=http://www.w3.org/2000/svg width=416 height=448 viewbox="0 0 416 448" id=__github><path fill=currentColor d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg> </defs> </svg> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay data-md-component=overlay for=__drawer></label> <a href=#visual-studio-code tabindex=1 class=md-skip> Saltar a contenido </a> <header class=md-header data-md-component=header> <nav class="md-header-nav md-grid"> <div class=md-flex> <div class="md-flex__cell md-flex__cell--shrink"> <a href=https://crisconru.github.io/ title="Tips de Cristo" class="md-header-nav__button md-logo"> <i class=md-icon></i> </a> </div> <div class="md-flex__cell md-flex__cell--shrink"> <label class="md-icon md-icon--menu md-header-nav__button" for=__drawer></label> </div> <div class="md-flex__cell md-flex__cell--stretch"> <div class="md-flex__ellipsis md-header-nav__title" data-md-component=title> <span class=md-header-nav__topic> Tips de Cristo </span> <span class=md-header-nav__topic> Visual Studio code </span> </div> </div> <div class="md-flex__cell md-flex__cell--shrink"> <label class="md-icon md-icon--search md-header-nav__button" for=__search></label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query placeholder=Búsqueda autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=query data-md-state=active> <label class="md-icon md-search__icon" for=__search></label> <button type=reset class="md-icon md-search__icon" data-md-component=reset tabindex=-1> &#xE5CD; </button> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=result> <div class=md-search-result__meta> Teclee para comenzar búsqueda </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> </div> <div class="md-flex__cell md-flex__cell--shrink"> <div class=md-header-nav__source> <a href=https://github.com/crisconru/tips title="Ir al repositorio" class=md-source data-md-source=github> <div class=md-source__icon> <svg viewbox="0 0 24 24" width=24 height=24> <use xlink:href=#__github width=24 height=24></use> </svg> </div> <div class=md-source__repository> crisconru/tips </div> </a> </div> </div> </div> </nav> </header> <div class=md-container> <main class=md-main> <div class="md-main__inner md-grid" data-md-component=container> <div class="md-sidebar md-sidebar--primary" data-md-component=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" data-md-level=0> <label class="md-nav__title md-nav__title--site" for=__drawer> <a href=https://crisconru.github.io/ title="Tips de Cristo" class="md-nav__button md-logo"> <i class=md-icon></i> </a> Tips de Cristo </label> <div class=md-nav__source> <a href=https://github.com/crisconru/tips title="Ir al repositorio" class=md-source data-md-source=github> <div class=md-source__icon> <svg viewbox="0 0 24 24" width=24 height=24> <use xlink:href=#__github width=24 height=24></use> </svg> </div> <div class=md-source__repository> crisconru/tips </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../.. title=Contenido class=md-nav__link> Contenido </a> </li> <li class="md-nav__item md-nav__item--active md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2 type=checkbox id=nav-2 checked> <label class=md-nav__link for=nav-2> Code </label> <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-2> Code </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-1 type=checkbox id=nav-2-1> <label class=md-nav__link for=nav-2-1> Devops </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-2-1> Devops </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-1-1 type=checkbox id=nav-2-1-1> <label class=md-nav__link for=nav-2-1-1> Ansible </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-2-1-1> Ansible </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../devops/ansible/ansible/ title=Ansible class=md-nav__link> Ansible </a> </li> <li class=md-nav__item> <a href=../../../devops/ansible/inventario/ title=Inventario class=md-nav__link> Inventario </a> </li> <li class=md-nav__item> <a href=../../../devops/ansible/comandos/ title=Comandos class=md-nav__link> Comandos </a> </li> <li class=md-nav__item> <a href=../../../devops/ansible/configuracion/ title=Configuracion class=md-nav__link> Configuracion </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-1-1-5 type=checkbox id=nav-2-1-1-5> <label class=md-nav__link for=nav-2-1-1-5> Playbooks </label> <nav class=md-nav data-md-component=collapsible data-md-level=4> <label class=md-nav__title for=nav-2-1-1-5> Playbooks </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../devops/ansible/playbook/playbook/ title=Playbook class=md-nav__link> Playbook </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-1-2 type=checkbox id=nav-2-1-2> <label class=md-nav__link for=nav-2-1-2> Docker </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-2-1-2> Docker </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../devops/docker/docker-aclaraciones/ title=Aclaraciones class=md-nav__link> Aclaraciones </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-instalacion/ title=Instalación class=md-nav__link> Instalación </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-hub/ title="Docker Hub" class=md-nav__link> Docker Hub </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-comandos/ title="Comandos docker" class=md-nav__link> Comandos docker </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-contenedores/ title="Lanzar contenedores" class=md-nav__link> Lanzar contenedores </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-imagenes/ title="Crear imágenes" class=md-nav__link> Crear imágenes </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-dockerfile/ title=Dockerfile class=md-nav__link> Dockerfile </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-volumes/ title=Volumes class=md-nav__link> Volumes </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-network/ title=Network class=md-nav__link> Network </a> </li> <li class=md-nav__item> <a href=../../../devops/docker/docker-dockercompose/ title="Docker Compose" class=md-nav__link> Docker Compose </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-1-3 type=checkbox id=nav-2-1-3> <label class=md-nav__link for=nav-2-1-3> ELK </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-2-1-3> ELK </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../devops/elk/elk/ title=ELK class=md-nav__link> ELK </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../../devops/git/git-git/ title=Git class=md-nav__link> Git </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-1-5 type=checkbox id=nav-2-1-5> <label class=md-nav__link for=nav-2-1-5> Git Flow </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-2-1-5> Git Flow </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../devops/git/gitflow/gitflow-gitflow/ title="Git Flow" class=md-nav__link> Git Flow </a> </li> <li class=md-nav__item> <a href=../../../devops/git/gitflow/gitflow-instalacion/ title="Puesta a punto" class=md-nav__link> Puesta a punto </a> </li> <li class=md-nav__item> <a href=../../../devops/git/gitflow/gitflow-comandos/ title=Comandos class=md-nav__link> Comandos </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--active md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-2 type=checkbox id=nav-2-2 checked> <label class=md-nav__link for=nav-2-2> IDEs </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-2-2> IDEs </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--active"> <input class="md-toggle md-nav__toggle" data-md-toggle=toc type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> Visual Studio code </label> <a href=./ title="Visual Studio code" class="md-nav__link md-nav__link--active"> Visual Studio code </a> <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Tabla de contenidos</label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#atajos-de-teclado title="Atajos de teclado" class=md-nav__link> Atajos de teclado </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-3 type=checkbox id=nav-2-3> <label class=md-nav__link for=nav-2-3> Python </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-2-3> Python </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-3-1 type=checkbox id=nav-2-3-1> <label class=md-nav__link for=nav-2-3-1> Entornos virtuales </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-2-3-1> Entornos virtuales </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../python/venv/venv-introduccion/ title=Introducción class=md-nav__link> Introducción </a> </li> <li class=md-nav__item> <a href=../../../python/venv/venv-virtualenv/ title=virtualenv class=md-nav__link> virtualenv </a> </li> <li class=md-nav__item> <a href=../../../python/venv/venv-virtualenvwrapper/ title=virtualenvwrapper class=md-nav__link> virtualenvwrapper </a> </li> <li class=md-nav__item> <a href=../../../python/venv/venv-pipenv/ title=pipenv class=md-nav__link> pipenv </a> </li> <li class=md-nav__item> <a href=../../../python/venv/venv-pyenv/ title=pyenv class=md-nav__link> pyenv </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../../python/python-pythonpath/ title=PYTHONPATH class=md-nav__link> PYTHONPATH </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-4 type=checkbox id=nav-2-4> <label class=md-nav__link for=nav-2-4> Web </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-2-4> Web </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-4-1 type=checkbox id=nav-2-4-1> <label class=md-nav__link for=nav-2-4-1> Frontend </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-2-4-1> Frontend </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../web/frontend/html/html-indice/ title=HTML class=md-nav__link> HTML </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-4-1-2 type=checkbox id=nav-2-4-1-2> <label class=md-nav__link for=nav-2-4-1-2> CSS </label> <nav class=md-nav data-md-component=collapsible data-md-level=4> <label class=md-nav__title for=nav-2-4-1-2> CSS </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../web/frontend/css/css-plugins/ title=Plugins class=md-nav__link> Plugins </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../../web/frontend/js/js-indice/ title=JS class=md-nav__link> JS </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-4-2 type=checkbox id=nav-2-4-2> <label class=md-nav__link for=nav-2-4-2> Backend </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-2-4-2> Backend </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-2-4-2-1 type=checkbox id=nav-2-4-2-1> <label class=md-nav__link for=nav-2-4-2-1> Django </label> <nav class=md-nav data-md-component=collapsible data-md-level=4> <label class=md-nav__title for=nav-2-4-2-1> Django </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../web/backend/django/django/ title=Django class=md-nav__link> Django </a> </li> <li class=md-nav__item> <a href=../../../web/backend/django/django-principiante/ title=Principiante class=md-nav__link> Principiante </a> </li> <li class=md-nav__item> <a href=../../../web/backend/django/django-intermedio/ title=Intermedio class=md-nav__link> Intermedio </a> </li> <li class=md-nav__item> <a href=../../../web/backend/django/django-avanzado/ title=Avanzado class=md-nav__link> Avanzado </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-3 type=checkbox id=nav-3> <label class=md-nav__link for=nav-3> Software </label> <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-3> Software </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-3-1 type=checkbox id=nav-3-1> <label class=md-nav__link for=nav-3-1> Linux </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-3-1> Linux </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../../sw/linux/linux-fecha-hora/ title="Fecha y Hora" class=md-nav__link> Fecha y Hora </a> </li> <li class=md-nav__item> <a href=../../../../sw/linux/linux-ficheros/ title=Ficheros class=md-nav__link> Ficheros </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-3-2 type=checkbox id=nav-3-2> <label class=md-nav__link for=nav-3-2> Redes </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-3-2> Redes </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../../sw/redes/redes-linux/ title=Linux class=md-nav__link> Linux </a> </li> <li class=md-nav__item> <a href=../../../../sw/redes/redes-ssh/ title=SSH class=md-nav__link> SSH </a> </li> <li class=md-nav__item> <a href=../../../../sw/redes/redes-iptables/ title=iptables class=md-nav__link> iptables </a> </li> <li class=md-nav__item> <a href=../../../../sw/redes/redes-ipv6/ title=IPv6 class=md-nav__link> IPv6 </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-3-3 type=checkbox id=nav-3-3> <label class=md-nav__link for=nav-3-3> Terminal </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-3-3> Terminal </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../../sw/terminal/terminal-bash/ title=Bash class=md-nav__link> Bash </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-3-3-2 type=checkbox id=nav-3-3-2> <label class=md-nav__link for=nav-3-3-2> tmux </label> <nav class=md-nav data-md-component=collapsible data-md-level=3> <label class=md-nav__title for=nav-3-3-2> tmux </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../../sw/terminal/tmux/tmux-comandos/ title=Comandos class=md-nav__link> Comandos </a> </li> <li class=md-nav__item> <a href=../../../../sw/terminal/tmux/tmux-customizar/ title=Customización class=md-nav__link> Customización </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../../../sw/terminal/terminal-zsh/ title=ZSH class=md-nav__link> ZSH </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-4 type=checkbox id=nav-4> <label class=md-nav__link for=nav-4> Hardware </label> <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-4> Hardware </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../../hw/upython/upython-informacion/ title=Micropython class=md-nav__link> Micropython </a> </li> <li class=md-nav__item> <a href=../../../../hw/pio/pio-informacion/ title=Platformio class=md-nav__link> Platformio </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-5 type=checkbox id=nav-5> <label class=md-nav__link for=nav-5> IoT </label> <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-5> IoT </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-toggle md-nav__toggle" data-md-toggle=nav-5-1 type=checkbox id=nav-5-1> <label class=md-nav__link for=nav-5-1> MQTT </label> <nav class=md-nav data-md-component=collapsible data-md-level=2> <label class=md-nav__title for=nav-5-1> MQTT </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../../../iot/mqtt/mqtt/ title=MQTT class=md-nav__link> MQTT </a> </li> <li class=md-nav__item> <a href=../../../../iot/mqtt/mqtt-hello-world/ title="Hola mundo" class=md-nav__link> Hola mundo </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Tabla de contenidos</label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#atajos-de-teclado title="Atajos de teclado" class=md-nav__link> Atajos de teclado </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content> <article class="md-content__inner md-typeset"> <h1 id=visual-studio-code>Visual Studio Code<a class=headerlink href=#visual-studio-code title="Permanent link">&para;</a></h1> <h2 id=atajos-de-teclado>Atajos de teclado<a class=headerlink href=#atajos-de-teclado title="Permanent link">&para;</a></h2> <p>Ayuda oficial -&gt; <a href=https://code.visualstudio.com/docs/getstarted/tips-and-tricks>Tips &amp; Tricks</a></p> <p>Hojas de resumen de atajos de teclado:</p> <ul> <li><a href=https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf>Windows</a></li> <li><a href=https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf>Mac</a></li> <li><a href=https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf>Linux</a></li> </ul> <p>Repo de un curso a Introducción a VSCode -&gt; <a href=https://github.com/Klerith/curso-VSCode>repo</a></p> <p>Empezamos con los atajos de teclado / shortcuts:</p> <ul> <li>Mover Líneas -&gt; Seleccionar poner el cursor en la o las líneas y</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌥ ↓ / ⌥ ↑
+Alt + ↑ / ↓
+</pre></div> </td></tr></table> <ul> <li>Comentar / descomentar línea</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌘ /
+Ctrl + <span class=se>\</span>
+</pre></div> </td></tr></table> <ul> <li>Comentar texto -&gt; Seleccionar solo el trozo de texto a comentar y</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⇧ ⌥ A
+Shift + Ctrl + A
+</pre></div> </td></tr></table> <ul> <li>Creación rápida de archivos -&gt; Si indicamos como fuente un archivo dentro de un directorio, ponemos el cursor sobre este y el atajo creará tanto el directorio como el archivo</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌥ click derecho
+Ctrl + click derecho
+</pre></div> </td></tr></table> <ul> <li>Ir a la definición de una función o variable -&gt; Cursor sobre la función o variable y</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌥ F12
+F12
+</pre></div> </td></tr></table> <ul> <li>Borrar línea</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⇧ ⌘ K
+Ctrl + Shift + K
+</pre></div> </td></tr></table> <ul> <li>Borrar todas las ocurrencias de una selección (variable/ funcion/...) -&gt; Seleccionar palabra (variable/funcion/...) y</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Primero seleccionar</span>
+⇧ ⌘ L
+Ctrl + Shift + L
+<span class=c1># Borrar línea (atajo del punto anterior)</span>
+⇧ ⌘ K
+Ctrl + Shift + K
+</pre></div> </td></tr></table> <ul> <li>Deshacer y Rehacer</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Deshacer</span>
+⌘ Z
+Ctrl + Z
+<span class=c1># Rehacer</span>
+⌘ ⇧ Z
+Ctrl + Shift + Z
+</pre></div> </td></tr></table> <ul> <li>Ocultar / Mostrar Sidebar</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌘ B
+Ctrl + B
+</pre></div> </td></tr></table> <ul> <li>Modo Zen (entrar y salir)</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌘ K Z
+Ctrl + K Z
+</pre></div> </td></tr></table> <ul> <li>Abrir fichero (útil para el Zen Mode)</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Primero teclear</span>
+⌘ P
+Ctrl + P
+<span class=c1># Luego el nombre del fichero y pulsar enter</span>
+</pre></div> </td></tr></table> <ul> <li>Mostrar / Ocultar Terminal</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌃ <span class=sb>`</span>
+Ctrl + <span class=sb>`</span>
+</pre></div> </td></tr></table> <ul> <li>Encapsular / Wrap código -&gt; Emmet Wrap</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Primero hay que abrir la Paleta de Comandos</span>
+⇧ ⌘ P
+Ctrl + SHIFT + P
+<span class=c1># Luego poner</span>
+wrap with Abbrevation
+<span class=c1># Poner que queremos que encapsule y código y darle a enter</span>
+</pre></div> </td></tr></table> <ul> <li>Cerrar / Reabrir / Cambiar de pestañas</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Cerrar pestaña</span>
+⌘ W
+Ctrl + W
+<span class=c1># Cerrar todas las pestañas</span>
+⌘ K ⌘ W
+Ctrl + K  Ctrl + W
+<span class=c1># Reabrir pestaña anterior</span>
+⇧ ⌘ T
+Ctrl + Shift + T
+<span class=c1># Cambiar de pestaña</span>
+⌃ TAB
+Ctrl + TAB
+</pre></div> </td></tr></table> <ul> <li>Copiar linea Arriba / Abajo</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Copiar abajo</span>
+⇧ ⌥ Down
+Ctrl + Shift + Alt + ↓
+<span class=c1># Copiar Arriba</span>
+⇧ ⌥ Up
+Ctrl + Shift + Alt + ↑
+</pre></div> </td></tr></table> <ul> <li>Crear multicursor en cualquier lado / Abajo / Arriba / Siguiente ocurrencia</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Para crear más de un cursor en sitio específico</span>
+⌥ click
+Alt + click
+<span class=c1># Si quiero crear más de un cursor pero seleccionando palabras</span>
+⌥ doble click
+Alt + doble click
+<span class=c1># Crear cursor abajo</span>
+⇧ ⌥ ↓
+Ctrl + Alt + ↓
+<span class=c1># Crear cursor arriba</span>
+⇧ ⌥ ↑
+Ctrl + Alt + ↑
+<span class=c1># Multiples ocurrencias -&gt; Primero selecciono la palabra y luego</span>
+⌘ + D
+Ctrl + D
+</pre></div> </td></tr></table> <ul> <li>Lowercase / Uppercase</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Seleccionar palabra / palabras</span>
+<span class=c1># Lowercase</span>
+⌃ ⇧ L
+Ctrl + Shift + L
+<span class=c1># Uppercase</span>
+⌃ ⇧ U
+Ctrl + Shift + U
+</pre></div> </td></tr></table> <ul> <li>Ver definiciones de clases / funciones / etc, en un fichero</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Primero es abrir el menu con</span>
+⌘ P
+Ctrl + P
+<span class=c1># Luego escribir</span>
+@
+<span class=c1># Si queremos que ordene por tipo (clases, funciones, etc), ponemos</span>
+@:
+</pre></div> </td></tr></table> <ul> <li>Ir a una línea</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span>⌃ G
+Ctrl + G
+</pre></div> </td></tr></table> <ul> <li>Markdown Preview</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Abrir vista previa</span>
+⌘ ⌃ V
+Ctrl + Shift + V
+<span class=c1># Abrir vista previa en el lateral</span>
+⌘ K, V
+Ctrl + K, V
+<span class=c1># Abrir vista previa fija en el lateral</span>
+Hay que ejecutarlo desde la paleta de comandos o asignarle un atajo
+</pre></div> </td></tr></table> <ul> <li>Reemplazar símbolo</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
+2
+3</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=c1># Poner el cursor sobre el nombre de la clase / funcion / etc y apretar</span>
+F2
+<span class=c1># Escribir el sustituto y presionar ENTER</span>
+</pre></div> </td></tr></table> <ul> <li>atajo</li> </ul> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>
+</pre></div> </td></tr></table> </article> </div> </div> </main> <footer class=md-footer> <div class=md-footer-nav> <nav class="md-footer-nav__inner md-grid"> <a href=../../../devops/git/gitflow/gitflow-comandos/ title=Comandos class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel=prev> <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i> </div> <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Anterior </span> Comandos </span> </div> </a> <a href=../../../python/venv/venv-introduccion/ title=Introducción class="md-flex md-footer-nav__link md-footer-nav__link--next" rel=next> <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Siguiente </span> Introducción </span> </div> <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i> </div> </a> </nav> </div> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-footer-copyright> <div class=md-footer-copyright__highlight> Copyright &copy; 2019 Cristóbal Contreras </div> powered by <a href=https://www.mkdocs.org>MkDocs</a> and <a href=https://squidfunk.github.io/mkdocs-material/ > Material for MkDocs</a> </div> <div class=md-footer-social> <link rel=stylesheet href=../../../../assets/fonts/font-awesome.css> <a href=https://github.com/crisconru class="md-footer-social__link fa fa-github"></a> <a href=https://twitter.com/crisconru class="md-footer-social__link fa fa-twitter"></a> <a href=https://linkedin.com/in/cristobalcontrerasrubio class="md-footer-social__link fa fa-linkedin"></a> </div> </div> </div> </footer> </div> <script src=../../../../assets/javascripts/application.245445c6.js></script> <script src=../../../../assets/javascripts/lunr/lunr.stemmer.support.js></script> <script src=../../../../assets/javascripts/lunr/lunr.es.js></script> <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script> </body> </html>
